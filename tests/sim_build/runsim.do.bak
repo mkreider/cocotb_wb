@@ -1,0 +1,5 @@
+vlib work
+vlog -timescale 1ns/100ps -mfcu +acc=rmb -sv  /home/mkreider/hdlprojects/cocotb/examples/av2wb/tests/../hdl/avalon_wrapper.v
+vsim -onfinish stop -pli libvpi.so avalon_wrapper
+do /home/mkreider/hdlprojects/cocotb/examples/av2wb/hdl/wave.do
+run -all
