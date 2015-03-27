@@ -82,7 +82,7 @@ architecture rtl of cocotb_netw is
    constant c_cbm_eb : natural := 0;
    
    
-   constant c_ram_size : natural := 512;
+   constant c_ram_size : natural := 65536/4;
    
    signal cbar_slaveport_in   : t_wishbone_slave_in_array (c_masters-1 downto 0); 
    signal cbar_slaveport_out  : t_wishbone_slave_out_array(c_masters-1 downto 0);
